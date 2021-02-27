@@ -1,0 +1,25 @@
+[user]
+	name = AbundantSalmon
+	email = 71184907+AbundantSalmon@users.noreply.github.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = /usr/bin/vim
+[merge]
+        tool = vscode
+[mergetool "vscode"]
+        cmd = code --wait $MERGED
+[diff]
+        tool = vscode
+[difftool "vscode"]
+        cmd = code --wait --diff $LOCAL $REMOTE
+[commit]
+        template = ~/.stCommitMsg
+[alias]
+        tree = log --branches --remotes --tags --graph --decorate --pretty=oneline --abbrev-commit
+[pull]
+        ff = only
