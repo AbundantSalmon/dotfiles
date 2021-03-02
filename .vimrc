@@ -56,7 +56,7 @@ set laststatus=2
 nmap te :w <CR> :!bash <CR>
 
 "Recommended Python settings
-set tabstop=8
+set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
