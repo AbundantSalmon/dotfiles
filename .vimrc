@@ -30,6 +30,7 @@ Plugin 'luochen1990/rainbow'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'artur-shaik/vim-javacomplete2'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -128,5 +129,8 @@ nnoremap ˚ O<Esc>j
 nnoremap <CR> o<Esc>k
 nnoremap ∆ o<Esc>k
 
-set scrolloff=3 "Keeps cursor not at the bottom or top of screen when scrolling
+"Keeps cursor not at the bottom or top of screen when scrolling
+set scrolloff=5
 
+"Required for vim-javacomplete2 plugin
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
