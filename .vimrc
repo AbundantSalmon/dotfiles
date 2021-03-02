@@ -132,5 +132,8 @@ nnoremap ∆ o<Esc>k
 "Keeps cursor not at the bottom or top of screen when scrolling
 set scrolloff=5
 
+"Required for rainbow plugin
+let g:rainbow_active = 1
+
 "Required for vim-javacomplete2 plugin
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
