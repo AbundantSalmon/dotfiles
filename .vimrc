@@ -137,3 +137,16 @@ let g:rainbow_active = 1
 
 "Required for vim-javacomplete2 plugin
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+"Indent using tab in normal mode
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+
+"Remap nerd commenter to use ctrl+/
+if has('win32')
+  nmap <C-/> <leader>c<Space>
+  vmap <C-/> <leader>c<Space>
+else
+  nmap <C-_> <leader>c<Space>
+  vmap <C-_> <leader>c<Space>
+endif
