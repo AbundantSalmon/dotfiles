@@ -23,3 +23,5 @@
         tree = log --branches --remotes --tags --graph --decorate --pretty=oneline --abbrev-commit
 [pull]
         ff = only
+[status]
+	showUntrackedFiles = all
