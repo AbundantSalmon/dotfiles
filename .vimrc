@@ -138,6 +138,12 @@ let g:rainbow_active = 1
 "Required for vim-javacomplete2 plugin
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
+"Allows the tab completion to depend on context
+let g:SuperTabDefaultCompletionType = 'context'
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
 "Indent using tab in normal mode
 nnoremap <Tab> >>
 nnoremap <S-Tab> <<
